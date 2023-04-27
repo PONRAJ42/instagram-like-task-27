@@ -1,0 +1,23 @@
+.like{
+	width:25s%;
+	height:50%;
+	border:3px solid blue;
+	display:flex;
+	
+}
+.hot{
+	display:flex;
+	align-items:center;
+	padding:0 0 0 50px;
+	
+}
+i{
+	padding:20px;
+}
+.red{
+	color:red;
+	
+}
+.hiding{
+	display:none;
+}

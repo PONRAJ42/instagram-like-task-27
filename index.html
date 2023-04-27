@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="keywords" content="html,js">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+ <body>
+	  <section>
+		<div class="like"> 
+<img src="https://scontent-tir2-1.xx.fbcdn.net/v/t39.30808-6/305653294_456106059867347_1653441604712881812_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=0fwx3U1MY0wAX-Dw4JO&_nc_ht=scontent-tir2-1.xx&oh=00_AfAwK4cguCNiwUC_lJYWuzZcrYlDCpSsjdKiQr2G-bmLeQ&oe=644E8562">		
+			<div class="hot"><i class="bi bi-heart heart"></i><i class="bi bi-heart-fill red hiding"></i><p>41 likes</p></div>
+			
+			 
+		</div>
+	  </section>
+  
+	<script>
+		var a=document.getElementsByClassName("heart");
+		var b=document.getElementsByClassName("red");
+		
+		a[0].addEventListener("click",function(){
+			a[0].classList.toggle("hiding");
+			b[0].classList.toggle("hiding");
+			var c=document.getElementsByTagName("p")[0];
+			var e=parseInt(c.innerHTML);
+			e+=1;
+			c.innerHTML=e+" like";
+		
+		});
+		
+		
+		
+		b[0].addEventListener("click",function(){
+			b[0].classList.toggle("hiding");
+			a[0].classList.toggle("hiding");
+			var c=document.getElementsByTagName("p")[0];
+			var e=parseInt(c.innerHTML);
+			e-=1;
+			c.innerHTML=e+" like";
+			
+		});
+		
+		
+	
+	</script>
+</body>
+</html>
